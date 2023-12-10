@@ -334,3 +334,334 @@ body {
     display: flex;
 }
 /* ========================== */
+/* =====  Main ===== */
+/* ----- About block ----- */
+.main .content {
+    background: var(--content-main-background);
+}
+.about_block {
+    padding: 80px 100px 120px 100px;
+    background: var(--content-background);
+}
+
+.about_block__head {
+    font-family: var(--font-head);
+    font-size: 24px;
+    color: var(--hover-color);
+}
+
+.about_block__head-text {
+    font-family: var(--font-maint);
+    font-weight: var(--regular);
+    font-size: 26px;
+    color: var(--main-color);
+}
+
+.about_block__opinion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_block__text {
+    font-family: var(--font-maint);
+    font-weight: var(--regular);
+    font-size: 24px;
+}
+
+/* ----- Recently-block  ----- */
+.recently_block {
+    padding: 50px 120px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: .8px 1px 5px rgba(0,0,0, .5);
+    position: relative;
+}
+
+.recently_block__head {
+    font-weight: var(--regular);
+    font-size: 28px;
+    position: absolute;
+    top: -45px;
+    left: 7%;
+}
+
+.recently_block__card {
+    text-align: center;
+}
+
+.recently_block__card-name {
+    margin-top: 5px;
+}
+
+.recently_block__card  img {
+    transition: .5s;
+}
+
+.recently_block__card:hover  img, .recently_block__card:focus img {
+    box-shadow: 0.3px .5px 2px 2px rgba(0,0,0, .5);
+    transition: .4s;
+}
+
+.recently_block__card a {
+    font-weight: var(--semibold);
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--main-color);
+    transition: .2s ;
+}
+
+.recently_block__card a:hover, .recently_block__card:focus {
+    color: var(--hover-color);
+    transition: .4s;
+}
+
+/* ----- Greatest characters -----*/
+.characters_block {
+    background: var(--content-background);
+    padding: 30px 120px;
+    box-shadow: 0.3px .5px 2px 2px rgba(0,0,0, .5);
+}
+
+.head {
+    font-family: var(--font-head);
+    font-size: 26px;
+    color: var(--hover-color);
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.characters_block__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chracters_block__item {
+    text-align: center;
+}
+
+.chracters_block__item img {
+    transition: .3s;
+}
+
+.chracters_block__item:hover img, .characters_block__item:focus img {
+    transform: scale(1.2);
+    transition: .5s;
+}
+
+.characters_block__name {
+    font-weight: var(--regular);
+    font-size: 18px;
+    margin-top: 28px;
+}
+
+/* ----- Top 10 ----- */
+.top-rating {
+    padding: 30px 100px 50px 100px;
+}
+
+.top-rating__content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-rating__left-block, .top-rating__right-block {
+    width: 30%;
+}
+
+.top-rating__middle-block {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* ------------------------- */
+
+button {
+    display: block;
+    position: relative;
+    transition: .2s;
+    box-shadow: 1px 2px 5px rgba(0,0,0, .5);
+    cursor: pointer;
+    margin-bottom: 25px;
+    border: none;
+}
+
+.top-rating__card {
+    padding: 25px 20px;
+    display: flex;
+    justify-content: flex-start;
+    background: var(--background-lightcolor);
+}
+
+button:hover, .top-rating__card:focus {
+    transform: scale(1.05);
+    transition: .4s;
+    box-shadow: 1px 2px 10px 1px rgba(0,0,0, .5);
+}
+
+.top-rating__card:first-child {
+    margin-top: 0;
+}
+
+.top-rating {
+    counter-reset: section;
+}
+
+.top-rating__card::before {
+    counter-increment: section;
+    content: counter(section);
+    position: absolute;
+    top: 50%;
+    left: -55px;
+    transform: translateY(-50%);
+    font-weight: var(--black);
+    font-size: 50px;
+    color: var(--hover-color);
+}
+
+/* ------------------------- */
+
+.top-rating__card-opinion {
+    margin-left: 20px;
+    text-align: left;
+}
+
+button .top-rating__card-text {
+    margin: 10px 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    height: 65px;
+    overflow: hidden;
+}
+
+.top-rating__card-rating {
+    font-weight: var(--bold);
+}
+
+.top-rating__card-rating .star {
+    color: #FFC700;
+    margin-left: 2px;
+}
+
+.top-rating__card-rating .star:first-child {
+    margin-left: 5px;
+}
+
+/* ------------------------- */
+
+.major-character {
+    position: relative;
+}
+
+.major-character__head {
+    font-family: var(--font-head);
+    font-size: 14px;
+    min-width: 150px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.character__fact {
+    margin-top: 50px;
+}
+
+.character__name {
+    font-weight: var(--bold);
+}
+
+/* ------------------------- */
+[data-tab-content] {
+    display: none;
+    animation: opacit 1.2s ease-in;
+    position: relative;
+}
+
+[data-tab="demon-slayer"]::before {
+    content: "Нажмите на карточки";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5;
+    padding: 10px 20px;
+    background: red;
+    color: #fff;
+}
+
+[data-tab="cowboy_bebop"]::after {
+    content: "Нажмите на карточки";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5;
+    padding: 10px 20px;
+    background: red;
+    color: #fff;
+}
+
+[data-tab="demon-slayer"]:focus ~ .top-rating__middle-block [data-tab-content="demon-slayer"] {
+    display: block;
+}
+
+[data-tab="cowboy_bebop"]:focus ~ .top-rating__middle-block [data-tab-content="cowboy_bebop"] {
+    display: block;
+}
+
+[data-tab="satoru_gojo"]:focus ~ .top-rating__middle-block [data-tab-content="satoru_gojo"] {
+    display: block;
+}
+
+[data-tab="eren"]:focus ~ .top-rating__middle-block [data-tab-content="eren"] {
+    display: block;
+}
+
+[data-tab="jojo"]:focus ~ .top-rating__middle-block [data-tab-content="jojo"] {
+    display: block;
+}
+
+[data-tab="kiritsugu"]:focus ~ .top-rating__middle-block [data-tab-content="kiritsugu"] {
+    display: block;
+}
+
+[data-tab="elric"]:focus ~ .top-rating__middle-block [data-tab-content="elric"] {
+    display: block;
+}
+
+[data-tab="naruto"]:focus ~ .top-rating__middle-block [data-tab-content="naruto"] {
+    display: block;
+}
+
+[data-tab="rintaro"]:focus ~ .top-rating__middle-block [data-tab-content="rintaro"] {
+    display: block;
+}
+
+[data-tab="gon"]:focus ~ .top-rating__middle-block [data-tab-content="gon"] {
+    display: block;
+}
+
+.top-rating__middle-block .character::after {
+    animation: show 1s ease-in;
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+}
