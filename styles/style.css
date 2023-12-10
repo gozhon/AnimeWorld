@@ -665,3 +665,186 @@ button .top-rating__card-text {
     width: 100%;
     background: #fff;
 }
+/*----  Effect Bg -----*/
+.effect {
+    width: 100%;
+    height: 2400px;
+}
+
+.serials .content {
+    box-shadow: 1px 2px 5px rgba(0,0,0, .5);
+    position: relative;
+    z-index: 999;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--content-background);
+}
+
+.serials__content {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.serials .recently_block {
+    justify-content: space-between;
+    padding: 0;
+    flex-wrap: wrap;
+    box-shadow: unset;
+}
+
+.serials .recently_block__card {
+    margin-bottom: 30px;
+}
+
+/*---- Our Contacts -----*/
+.our-contact {
+    padding: 70px 0;
+    background: #fff;
+}
+
+.our-contact__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    max-width: 300px;
+    border: 3px solid var(--hover-color);
+    padding: 30px;
+}
+
+.our-contacts__cards-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.our-contact__card {
+    cursor: pointer;
+    transition: .3s ease-in;
+    box-shadow: 2px 5px 1px 1px var(--hover-color);
+}
+
+.our-contact__card:hover {
+   transition: .5s ease-in-out; 
+   transform: translate(-10px, -5px);
+    box-shadow: 10px 15px 1px 1px var(--hover-color);
+}
+
+.our-contact__card img, .card__head {
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+.social__head {
+    font-size: 12px;
+    font-family: var(--font-head);
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: var(--hover-color);
+}
+
+.card__fan span, .card__hobbies span {
+    font-weight: var(--bold);
+}
+
+.telegram, .instagram, .vk, .facebook, .bitcoin, .ethereum {
+    transition: .2s;
+    font-size: 20px;
+    color: #000;
+}
+
+.telegram:hover, .telegram:focus {
+    color: #229ED9;
+} 
+
+.instagram:hover, .instagram:focus {
+    color: #F56040;
+}
+
+.vk:hover, .vk:focus {
+    color: #0077FF;
+}
+
+.facebook:hover, .facebook:focus {
+    color: #1877F2;
+}
+
+.bitcoin:hover, .bitcoin:focus {
+    color: #f7931a;
+}
+
+.ethereum:hover, .ethereum:focus {
+    color: #37367b;
+}
+
+.telegram:hover, .instagram:hover, .vk:hover, .facebook:hover, .bitcoin:hover, .ethereum:hover {
+    transition: .3s;
+}
+
+.instagram, .vk, .facebook, .ethereum {
+    margin-left: 5px;
+}
+
+
+/* ----  Footer ---- */
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 50px;
+    flex-direction: row;
+}
+/* ================== */
+
+/* ===== Animations ===== */
+@keyframes opacit {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes show {
+    0% {
+        height: 100%;
+    }
+
+    100% {
+        height: 0;
+    }
+}
+
+@keyframes hideEl {
+    0% {
+        display: block;
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        height: 0;
+    }
+}
+
+@keyframes showEl {
+    0% {
+        opacity: 0;
+        height: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        height: 100%;
+    }
+}
